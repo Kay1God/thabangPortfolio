@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Thabang's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .project-box {
+            width: 45%;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project-box:hover {
+            transform: scale(1.05);
+        }
+
+        .project-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .project-box h2 {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .project-box p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .project-box a {
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: rgb(109, 67, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-box a:hover {
+            background-color: rgb(80, 50, 0);
+        }
+
+        @media (max-width: 884px) {
+            .project-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Projects</h1>
+
+    <div class="project-container">
+        <!-- Project 1: Local Cinema Website -->
+        <div class="project-box">
+            <img src="skyP2.png" alt="Cinema Project Image">
+            <h2>Local Cinema Website</h2>
+            <p>Created a website for a local cinema to promote their services and enable online bookings. This project includes a reservation system and a dynamic schedule display.</p>
+            <a href="cinema-project.html">View Project</a>
+        </div>
+
+        <!-- Project 2: Local Bar and Restaurant -->
+        <div class="project-box">
+            <img src="blkP1.png" alt="Bar and Restaurant Project Image">
+            <h2>Local Bar & Restaurant</h2>
+            <p>Developed a website for a local bar and restaurant that allows users to make online reservations. The project includes menu features and interactive booking options.</p>
+            <a href="bar-restaurant-project.html">View Project</a>
+        </div>
+    </div>
+
+</body>
+</html>
