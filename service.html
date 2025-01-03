@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Thabang's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, #ffffff, #fed7ad);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .service-box {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+
+        .service-box h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #6d4300;
+        }
+
+        .service-box p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .service-box span {
+            font-size: 1.2rem;
+            color: #6d4300;
+            font-weight: bold;
+        }
+
+        .service-box a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #6d4300;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .service-box a:hover {
+            background-color: #503200;
+        }
+
+        @media (max-width: 768px) {
+            .service-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Services</h1>
+    <div class="services-container">
+        <!-- Basic Website Package -->
+        <div class="service-box">
+            <h2>Basic Website Package</h2>
+            <p>Get a custom, mobile-friendly website with basic SEO and hosting setup.</p>
+            <span>ZAR 5,000 + ZAR 250/month</span>
+             <a href="contact.html" class="back-home">Get Started</a>
+        </div>
+        <!-- Premium Website Package -->
+        <div class="service-box">
+            <h2>Premium Website Package</h2>
+            <p>Includes online booking systems, advanced analytics, and social media integration.</p>
+            <span>ZAR 10,000 + ZAR 500/month</span>
+            <a href="contact.html" class="back-home">Get Started</a>
+        </div>
+        <!-- Automation and Marketing Tools -->
+        <div class="service-box">
+            <h2>Automation & Marketing Tools</h2>
+            <p>Boost your business with CRM, automated emails, and SMS notifications.</p>
+            <span>ZAR 3,000 setup + ZAR 300/month</span>
+            <a href="contact.html" class="back-home">Get Started</a>
+        </div>
+    </div>
+</body>
+</html>
