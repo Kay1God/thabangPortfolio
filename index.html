@@ -175,6 +175,18 @@
             box-shadow: 0 0 40px rgb(109,67, 0);
         }
 
+        .contact-section {
+            display: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-section.active {
+            display: block;
+        }
+
         @media (max-width: 884px) {
             body {
                 overflow-y: visible;
@@ -241,7 +253,7 @@
             <div class="links">
                 <a href="#about">About</a>
                 <a href="projects.html">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" onclick="toggleContact()">Contact</a>
             </div>
         </div>
     </nav>
@@ -263,7 +275,7 @@
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="content">
             <h2>Contact Me</h2>
             <p>Email: <a href="mailto:kgagodi9@gmail.com">kgagodi9@gmail.com</a></p>
@@ -271,7 +283,15 @@
             <p>Social: Connect via LinkedIn, GitHub, or Twitter.</p>
         </div>
     </section>
+
+    <script>
+        function toggleContact() {
+            const contactSection = document.querySelector('.contact-section');
+            contactSection.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
+
 
 
