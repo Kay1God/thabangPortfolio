@@ -16,144 +16,156 @@
         }
 
         body {
-            background-color: #f4f4f9;
-            color: #333;
             width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            background-color: #f0f0f0;
+            font-size: 1rem;
         }
 
-        .cv-container {
-            width: 80%;
-            max-width: 900px;
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .cv-header {
+        header {
+            width: 100%;
+            background-color: rgb(109,67,0);
+            padding: 20px 0;
+            color: white;
             text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        section {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: rgb(109,67,0);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .experience, .vision {
             margin-bottom: 30px;
         }
 
-        .cv-header h1 {
-            font-size: 2.5rem;
-            color: rgb(109,67, 0);
-        }
-
-        .cv-header p {
-            font-size: 1.1rem;
-            color: #555;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            color: rgb(109,67, 0);
-            margin-top: 20px;
-            border-bottom: 2px solid rgb(109,67, 0);
-            padding-bottom: 5px;
-        }
-
-        .content {
-            margin: 20px 0;
-        }
-
-        .content ul {
+        .experience ul {
             list-style: none;
             padding-left: 0;
         }
 
-        .content li {
+        .experience li {
+            margin-bottom: 10px;
             font-size: 1.1rem;
-            margin: 8px 0;
         }
 
-        .back-home {
-            display: inline-block;
+        .social-links {
+            text-align: center;
             margin-top: 30px;
-            font-size: 1.2rem;
-            color: rgb(109,67, 0);
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 2px solid rgb(109,67, 0);
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s linear;
         }
 
-        .back-home:hover {
-            background-color: rgb(109,67, 0);
+        .social-links i {
+            width: 3rem;
+            height: 3rem;
+            margin: 5px;
+            background-color: rgb(109,67,0);
             color: white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: 0.3s ease;
         }
 
-        @media (max-width: 884px) {
-            .cv-container {
-                width: 90%;
-            }
+        .social-links i:hover {
+            background-color: transparent;
+            border: 2px solid rgb(109,67,0);
+            color: rgb(109,67,0);
+            scale: 1.2;
+        }
 
-            .cv-header h1 {
-                font-size: 2rem;
-            }
+        button {
+            width: 200px;
+            padding: 10px;
+            background-color: rgb(109,67,0);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
 
-            .cv-header p {
-                font-size: 1rem;
-            }
-
-            .content ul {
-                font-size: 1rem;
-            }
+        button:hover {
+            background-color: transparent;
+            color: rgb(109,67,0);
+            border: 2px solid rgb(109,67,0);
         }
     </style>
 </head>
 <body>
-    <div class="cv-container">
-        <div class="cv-header">
-            <h1>Thabang's CV</h1>
-            <p>Passionate Coding & Robotics Educator | Web Developer | Problem Solver</p>
-        </div>
-
-        <div class="content">
-            <div class="section-title">Work Experience</div>
+    <header>
+        <h1>Thabang's CV</h1>
+        <p>BSc in Information Technology | Coding & Robotics Educator | Health Informatics Professional</p>
+    </header>
+    <section>
+        <h2>Current Role</h2>
+        <div class="experience">
+            <h3>Coding and Robotics Educator</h3>
+            <p>Curro Mafikeng</p>
             <ul>
-                <li><strong>Coding and Robotics Educator</strong> | Potch Primary School (2023 - Present)</li>
-                <li><strong>Web Developer & IT Specialist</strong> | Freelance (2022 - Present)</li>
-                <li><strong>Technology Educator</strong> | Various Schools (2018 - 2022)</li>
+                <li>Teach Grades 1 to 7, focusing on computer skills, coding, robotics, and technology.</li>
+                <li>Involved in intervention programs and school projects to help learners develop critical thinking skills.</li>
+                <li>Provide hands-on activities that foster learning through games and practical experiences.</li>
             </ul>
         </div>
 
-        <div class="content">
-            <div class="section-title">Education</div>
+        <h2>Previous Experience</h2>
+        <div class="experience">
+            <h3>Health Information Specialist</h3>
+            <p>SAHMS</p>
             <ul>
-                <li><strong>Bachelor of Science in Computer Science</strong> | North-West University (2018)</li>
-                <li><strong>Certifications:</strong> Micro:bit, Robotics, Coding, Drone Technology</li>
+                <li>Supported health services through effective ICT management, planning, and training.</li>
+                <li>Ensured data integrity and maintained secure health data systems.</li>
+                <li>Coordinated integrated services to improve overall healthcare operations.</li>
             </ul>
         </div>
 
-        <div class="content">
-            <div class="section-title">Skills & Expertise</div>
+        <div class="skills">
+            <h2>Skills</h2>
             <ul>
-                <li>Coding: Python, HTML, CSS, JavaScript, Arduino</li>
-                <li>Robotics: Arduino, Micro:bit, Raspberry Pi</li>
-                <li>Drone Technology: Tello DJI Drone, DroneBlocks Simulators</li>
-                <li>Web Development: Responsive Websites, E-commerce, GitHub</li>
-                <li>Project Management: Curriculum Development, Team Leadership</li>
+                <li>Robotics & Coding (Arduino, Python, Scratch, Micro:bit)</li>
+                <li>Web Design & Development (HTML, CSS, JavaScript, Bootstrap)</li>
+                <li>Leadership & Team Management</li>
+                <li>Effective Communication & Training</li>
             </ul>
         </div>
 
-        <div class="content">
-            <div class="section-title">Projects</div>
-            <ul>
-                <li>Drone Academy for Learners (Ages 8-16) - Potch Primary</li>
-                <li>Micro:bit and Robotics Club for Students</li>
-                <li>Various Web Design Projects for Local Businesses</li>
-            </ul>
+        <h2>Vision</h2>
+        <div class="vision">
+            <p>My vision is to expand the after-school program regionally and nationally, providing learners with essential tech skills. I aim to collaborate with organizations and investors to realize this vision, contributing to a tech-savvy workforce that drives innovation and growth.</p>
         </div>
 
-        <a href="index.html" class="back-home">Back to Home</a>
-    </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button onclick="window.location.href='index.html'">back-home</button>
+    </section>
 </body>
 </html>
+
