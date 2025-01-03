@@ -68,6 +68,24 @@
             filter: drop-shadow(0 0 10px rgb(109,67,0));
         }
 
+        .back-home {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: rgb(109,67, 0);
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid rgb(109,67, 0);
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s linear;
+        }
+
+        .back-home:hover {
+            background-color: rgb(109,67, 0);
+            color: white;
+        }
+
         @media (max-width: 884px) {
             .contact-container {
                 flex-direction: column;
@@ -104,6 +122,8 @@
                 <i class="fab fa-github"></i>
                 <i class="fab fa-twitter"></i>
             </div>
+            <!-- Link to go back to home page -->
+            <a href="index.html" class="back-home">Back to Home</a>
         </div>
     </div>
 </body>
